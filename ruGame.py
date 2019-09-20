@@ -15,13 +15,13 @@ class russianRoulette:
         }
 
     def addPlayerIn(self, group_id, user_id):
-        self.gameDict[group_id][user_id] = 1
+        self.gameDict[group_id]["playerDict"][user_id] = 1
 
     def addPlayerPlayTime(self, group_id, user_id):
-        self.gameDict[group_id][user_id] += 1
+        self.gameDict[group_id]["playerDict"][user_id] += 1
 
     def getPlayTimeWithUserId(self, group_id, user_id):
-        return self.gameDict[group_id][user_id]
+        return self.gameDict[group_id]["playerDict"][user_id]
 
     def pullTrigger(self, group_id):
         self.gameDict[group_id]["theLowerBound"] += 1
