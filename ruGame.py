@@ -38,7 +38,7 @@ class russianRoulette:
     def getResult(self, group_id):
         random.seed(time.time_ns())
         draw = random.randint(self.gameDict[group_id]["theLowerBound"], self.gameDict[group_id]["theHighestBound"])
-        if draw >= 8:
+        if draw >= self.gameDict[group_id]["theHighestBound"]:
             self.gameDict[group_id]["theLowerBound"] = 1
             return True
 
