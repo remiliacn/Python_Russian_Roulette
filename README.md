@@ -1,6 +1,8 @@
 # 俄罗斯轮盘赌（qq机器人小游戏）
 Python russian roulette that supports coolqHTTP to host independent group games
 
+最新版本：https://github.com/remiliacn/qqBot/blob/master/Services/ru_game.py
+
 支持：
 * 多个qq群同步进行游戏
 * 输者将会被随机时间禁言
